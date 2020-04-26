@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 20px;
+  background-color: rgb(153, 152, 152);
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  width: 1880px;
+  height: 100%;
+}
+
+.photo-card > img {
+  display: inline-block;
+  width: 450px;
+  height: 450px;
+}
