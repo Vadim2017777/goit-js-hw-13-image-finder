@@ -1,7 +1,6 @@
 const baseUrl =
   'https://pixabay.com/api/?image_type=photo&orientation=horizontal&';
 
-//pixabay.com/api/?image_type=photo&orientation=horizontal&q=что_искать&page=номер_страницы&per_page=12&key=твой_ключ
 export default {
   API_KEY: '16237149-31f8128048fb3bf9af47cfac8',
   page: 1,
@@ -21,6 +20,9 @@ export default {
       .then(parsedResponse => {
         this.incrementPage();
         return parsedResponse.hits;
+      })
+      .catch(error => {
+        throw error;
       });
   },
   incrementPage() {
