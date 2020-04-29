@@ -18,7 +18,7 @@ const refs = {
 
 refs.searchForm.addEventListener(
   'input',
-  _.debounce(searchFormInputHandler, 500),
+  _.debounce(searchFormInputHandler, 1000),
 );
 refs.loadMoreBtn.addEventListener('click', loadMoreBtnHandler);
 refs.gallery.addEventListener('click', ImageclickHandler);
