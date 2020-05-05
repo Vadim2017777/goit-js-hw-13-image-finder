@@ -73,7 +73,7 @@ function ImageclickHandler(e) {
 
 function scroll(position) {
   window.scrollTo({
-    top: position + 40,
+    top: position + refs.searchForm.clientHeight,
     behavior: 'smooth',
   });
 }
